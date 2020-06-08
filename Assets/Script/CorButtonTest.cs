@@ -39,7 +39,7 @@ public class CorButtonTest : MonoBehaviour {
         var sphere1 = InstantiateSphere(new Vector3(0, 0, 0));
         buttonClick = false;
 
-        //buttonClickがFalseになるまで待つ　同じ処理
+        //buttonClickがtrueになるまで待つ　同じ処理
         yield return new WaitUntil (() => buttonClick);
 
         var sphere2 = InstantiateSphere(new Vector3(2, 0, 0));
